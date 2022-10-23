@@ -119,6 +119,10 @@ img {
   color: var(--hover-color);
 }
 
+.link.activ{
+  color: var(--hover-color);
+}
+
 .auth-nav {
   display: flex;
   align-items: center;

@@ -149,6 +149,8 @@ img {
 }
 
 .auth-nav .link {
+  display: flex;
+  align-items: center;
   padding: 32px 0;
   color: var(--additional-text-color);
 }
@@ -162,7 +164,7 @@ img {
 
 .hero {
   max-width: 1600px;
-  height: 600px;
+  padding: 200px 0;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -175,10 +177,6 @@ img {
   background-color: var(--background-footer-color);
 }
 
-.hero-box {
-  padding-top: 197px;
-  padding-bottom: 203px;
-}
 
 .hero-title {
   width: 696px;
@@ -478,6 +476,10 @@ img {
 
 .address .text {
   color: var(--auxiliary-text-color);
+}
+
+.social{
+  padding-top: 12px;
 }
 
 .social-title {

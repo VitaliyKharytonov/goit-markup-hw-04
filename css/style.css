@@ -119,7 +119,7 @@ img {
   color: var(--hover-color);
 }
 
-.link.activ{
+.link.activ {
   color: var(--hover-color);
 }
 
@@ -177,7 +177,6 @@ img {
   background-color: var(--background-footer-color);
 }
 
-
 .hero-title {
   width: 696px;
   margin: auto;
@@ -217,6 +216,7 @@ img {
 }
 
 /* стиль заголовків секцій */
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -292,8 +292,24 @@ img {
 }
 
 .work-list .item {
+  position: relative;
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
+}
+
+.work-list .text {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--auxiliary-text-color);
+  background: rgba(47, 48, 58, 0.8);
 }
 
 /* стиль секції команда */
@@ -478,7 +494,7 @@ img {
   color: var(--auxiliary-text-color);
 }
 
-.social{
+.social {
   padding-top: 12px;
 }
 
@@ -528,9 +544,8 @@ img {
 .filter-button:focus {
   color: var(--auxiliary-text-color);
   background-color: var(--hover-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
-  0px 1px 2px rgba(0, 0, 0, 0.08), 
-  0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-list {
@@ -576,13 +591,37 @@ img {
 
 .project-list .item:hover,
 .project-list .item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
-  0px 4px 4px rgba(0, 0, 0, 0.06),
-  1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.item > .link {
+.project-link {
   text-decoration: none;
+}
+
+.project-link:hover .project-description{
+  transform: translateX(0);
+}
+
+.project-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-description {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  color: var(--auxiliary-text-color);
+  background: rgba(33, 150, 243, 0.9);
 }
 
 .project-list .text {
